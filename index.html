@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn</title>
-</head>
-<body>
-    <?php
-        echo "Hello, world"
-    ?>
-</body>
-</html>
+<title>Casio-Style Calculator</title>
+<style>
+.calculator {
+width: 400px;
+background-color: #f2f2f2;
+border: 2px solid #ccc;
+border-radius: 10px;
+margin: 0 auto;
+padding: 20px;
+}
+.fake-screen {
+background-color: #000;
+color: #fff;
+font-size: 24px;
+text-align: right;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.question-screen {
+background-color: #ddd;
+font-size: 18px;
+text-align: left;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.button-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+}
+button {
+width: 100%;
+padding: 15px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+font-size: 20px;
+cursor: pointer;
+}
+button:hover {
+background-color: #ddd;
+}
+.output {
+font-weight: bold;
+text-align: right;
+padding: 10px;
+background-color: #ddd;
+border: 1px solid #ccc;}
